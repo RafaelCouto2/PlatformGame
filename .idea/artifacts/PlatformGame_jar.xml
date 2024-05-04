@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="PlatformGame:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PlatformGame_jar</output-path>
+    <root id="archive" name="PlatformGame.jar">
+      <element id="module-output" name="PlatformGame" />
+    </root>
+  </artifact>
+</component>
