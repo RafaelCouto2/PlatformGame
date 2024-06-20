@@ -67,18 +67,18 @@ public class Player extends Entity {
     private void updatePos() {
         moving = false;
 
-        if(left && !right){
+        if(left && !right) {
             x -= playerSpeed;
             moving = true;
-        } else if (right && !left){
+        } else if (right && !left) {
             x += playerSpeed;
             moving = true;
         }
 
-        if(up && !down){
+        if(up && !down) {
             y -= playerSpeed;
             moving = true;
-        } else if (down && !up){
+        } else if (down && !up) {
             y += playerSpeed;
             moving = true;
         }

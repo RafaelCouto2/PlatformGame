@@ -64,15 +64,11 @@ public class Game implements Runnable {
             }
             if(deltaF >= 1){
                 //FRAMES
+
                 gamePanel.repaint();
                 frames++;
                 deltaF--;
             }
-           // if(actualFrame - lastFrame >= timePerFrame){
-           //     gamePanel.repaint();
-           //     lastFrame = actualFrame;
-           //     frames++;
-           // }
 
             if(System.currentTimeMillis() - lastCheck >= 1000){
                 lastCheck = System.currentTimeMillis();
@@ -82,7 +78,7 @@ public class Game implements Runnable {
             }
         }
     }
-    public void windowsFocusLost() {
+    public void windowsFocusLost() { //GRANTS THAT ALL THE BOOLEANS VALUES TO BE FALSE IF GAME`S WINDOW LOST FOCUSES BY ALT TAB ONE
         player.reseDirBooleans();
     }
 
